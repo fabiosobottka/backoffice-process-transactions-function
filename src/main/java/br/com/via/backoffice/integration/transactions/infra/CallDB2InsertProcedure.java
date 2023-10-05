@@ -9,10 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CallDB2InsertProcedure {
 
-    private final Logger logger = LoggerFactory.getLogger(CallDB2InsertProcedure.class);
-
     public TransactionData execute(TransactionEvent event) {
-        logger.info("nothing yet {}", event);
         return new TransactionData();
     }
 }

@@ -24,7 +24,7 @@ public class ProcessTransactionHandler {
     @Autowired
     private UpdateTransactionFunction updateTransactionFunction;
 
-    @FunctionName("KafkaTriggerFunction")
+    @FunctionName("processTransactions")
     public void run(
             @KafkaTrigger(
                     name = "onInsertTransactionEvent",
